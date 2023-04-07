@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+:root{
+    --amarillo: #ffe600;
+    --black:#222222;
+}
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    background: #ffe600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top:0;
+}
+
+.title-header{
+    text-align: center;
+    margin: auto auto;
+    font-size: 1.8rem;
+}
+
+.nav{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100vw);
+    transition: transform .2s ease-out;
+    position:fixed;
+    top:0;
+}
+
+.nav.toggle{
+    transform: translateX(0);
+}
+
+.ul{
+    width: 100%;
+    margin-top: 85px;
+}
+
+.li{
+    list-style: none;
+    padding: 30px 0;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.li:hover{
+    background: var(--amarillo);
+}
+
+.hipervinculo{
+    text-decoration: none;
+    color: var(--amarillo);
+}
+
+.li:hover .hipervinculo{
+    color: #222;
+}
+.main{
+    margin-top: 10px;
+    width: 100%;
+}
+.section{
+    padding: 90px 0;
+    height: 100vh;
+}
+
+.title-section{
+    text-align: center;
+}
+
+
+.buttom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background:#ffe600 ;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+}
+
+.line{
+    position: relative;
+    width: 35px;
+    height: 4px;
+    background: #000;
+    transition: all 0.1s ease-in;
+}
+
+
+.line::before{
+    content:"";
+    position: absolute;
+    min-width: 35px;
+    min-height: 4px;
+    background: #000;
+    transform: translateY(-10px);
+    transition: transform 0.1s ease-in;
+}
+.line::after{
+    content:"";
+    position: absolute;
+    min-width: 35px;
+    min-height: 4px;
+    background: #000;
+    transform: translateY(10px);
+    transition: transform 0.1s ease-in;
+}
+
+.line.active{
+    position: relative;
+    width: 35px;
+    height: 4px;
+    background: #000;
+    transform: rotate(45deg);
+    transition: transform 0.1s ease-in;
+}
+
+.line.active::before{
+    content:"";
+    position: absolute;
+    min-width: 35px;
+    min-height: 4px;
+    background: #000;
+    transform: translateY(0px);
+}
+
+.line.active::after{
+    content:"";
+    position: absolute;
+    min-width: 35px;
+    min-height: 4px;
+    background: #000;
+    transform: translateY(10px);
+    transform: rotate(-90deg);
+}
+
+
+/*--------------------- SECTION 1 -------------------------------*/
+
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 10px;
+}
+
+.buttom-timer{
+    padding: 0 .8rem;
+}
+
+.reloj{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+/*-------------------- SECTION 2 ------------------------------*/
+.section2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-game{
+    width: 100%;
+    height: 50vh;
+    margin-top: 2rem;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background: var(--amarillo);
+}

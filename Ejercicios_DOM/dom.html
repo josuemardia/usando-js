@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Ejercicios del DOM</title>
+</head>
+<body class="body">
+    <header class="header">
+        <h2 class="title-header">Ejercicios del DOM</h2>
+    </header>
+
+    <nav class="nav">
+        <ul class="ul">
+            <li class="li"><a href="#section1" class="hipervinculo">Reloj Digital y Alarma sonora</a></li>
+            <li class="li"><a href="#section2" class="hipervinculo">Seccion 2</a></li>
+            <li class="li"><a href="#section3" class="hipervinculo">Seccion 3</a></li>
+            <li class="li"><a href="#section4" class="hipervinculo">Seccion 4</a></li>
+            <li class="li"><a href="#section5" class="hipervinculo">Seccion 5</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <section id="section1" class="section container">
+            <h2 class="title-section">Reloj Digital y Alarma Sonora</h2>
+            <div class="reloj"></div>
+            <div class="box-timer">
+                <button id="iniciarReloj" class="buttom-timer">Inicar Reloj</button>
+                <button id="detenerReloj" class="buttom-timer">Detener Reloj</button>
+                <button id="iniciarAlarma" class="buttom-timer">Iniciar Alarma</button>
+                <button id="detenerAlarma" class="buttom-timer">Detener Alarma</button>
+            </div>
+        </section>
+        <section id="section2" class="section container">
+            <h2 class="title-section">Eventos del Teclado</h2>
+            <div class="box-game">
+                <div class="circle"></div>
+            </div>
+        </section>
+        <section id="section3" class="section container">
+            <h2 class="title-section">Cuenta regresiva</h2>
+            <div id="countDown"></div>
+        </section>
+        <section id="section4" class="section container">
+            <h2 class="title-section">Seccion 4</h2>
+        </section>
+        <section id="section5" class="section container">
+            <h2 class="title-section">Seccion 5</h2>
+        </section> 
+        <div class="buttom">
+            <div class="line"></div>
+        </div>
+    </main>
+    <script src="./js/main.js" type="module"></script>
+
+</body>
+</html>
